@@ -18,6 +18,10 @@ services:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
     restart: always
+    ports:
+      - 3306:3306
+    labels: 
+      kompose.service.type: nodeport
     environment:
       MYSQL_ROOT_PASSWORD: passroot
       MYSQL_DATABASE: serBooking
