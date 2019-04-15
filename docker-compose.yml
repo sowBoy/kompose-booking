@@ -4,7 +4,7 @@ services:
 
   apache:
     container_name: sowboy-apache
-    image: symfonypower/service-booking:1.0.0
+    image: symfonypower/booking-api:1.0.0
     links:
       - db
     ports:
